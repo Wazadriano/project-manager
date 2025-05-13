@@ -1,7 +1,75 @@
+:root {
+  --primary: #0077ff;
+  --light: #f9f9f9;
+  --dark: #222;
+  --border: #ddd;
+  --radius: 8px;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f4f4f4;
-  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+#app {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+h1, h2, h3 {
+  color: var(--primary);
+}
+
+button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #005fd6;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 0.5rem 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: #f1f1f1;
+  margin: 0.3rem 0;
+  padding: 0.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+#task-list-container {
+  margin-top: 1rem;
+}
+
+select#filter {
+  margin-bottom: 1rem;
 }
