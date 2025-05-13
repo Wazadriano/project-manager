@@ -105,3 +105,18 @@ input[type="file"] {
     width: 100%;
   }
 }
+#app.app-home {
+  background: linear-gradient(135deg, #e3f2fd, #ffffff);
+}
+
+#app.app-dashboard {
+  background: linear-gradient(135deg, #e8f5e9, #ffffff);
+}
+
+#app.app-form {
+  background: linear-gradient(135deg, #f3e5f5, #ffffff);
+}
+
+#app {
+  transition: background 0.5s ease-in-out;
+}
